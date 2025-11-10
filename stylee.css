@@ -39,7 +39,7 @@ a:hover {
 
 .preconceito {
   display: flex;
-  flex-wrap: wrap; /* Faz o conteúdo quebrar em telas menores */
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
