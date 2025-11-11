@@ -55,10 +55,10 @@ a:hover {
   transition: transform 0.3s ease;
 }
 .texto.aproximar {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .imagem.aproximar {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .texto {
   flex: 1 1 45%;
