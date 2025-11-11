@@ -54,7 +54,12 @@ a:hover {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
-
+.texto.aproximar {
+  transform: scale(1.2); /* Aumenta em 20% */
+}
+.imagem.aproximar {
+  transform: scale(1.2); /* Aumenta em 20% */
+}
 .texto {
   flex: 1 1 45%;
 }
