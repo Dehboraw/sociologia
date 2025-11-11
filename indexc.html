@@ -67,6 +67,15 @@
     </div>
 <script>
     window.alert('Nessa página, você entederará o conceito de preconceito sociocultural.')
+    const minhaDiv = document.getElementById('minhaDiv');
+
+minhaDiv.addEventListener('mouseover', () => {
+  minhaDiv.classList.add('aproximar');
+});
+
+minhaDiv.addEventListener('mouseout', () => {
+  minhaDiv.classList.remove('aproximar');
+});
 </script>
 </body>
 </html>
