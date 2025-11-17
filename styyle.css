@@ -54,8 +54,8 @@ header {
   padding:80px;
   max-width: 400px;
   margin: auto;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; 
+  align-items: center;
   display: flex;
   overflow: hidden;
 }
@@ -74,23 +74,24 @@ a:hover {
   color: rgb(0, 242, 255);
 }
 .tooltip {
-  visibility: hidden; /* Oculta o tooltip por padrão */
+  visibility: hidden; 
   width: 120px;
   background-color: #333;
   color: #fff;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-  position: absolute; /* Posiciona o tooltip */
-  z-index: 1; /* Garante que fique acima de outros elementos */
-  bottom: 125%; /* Posição acima do container */
+  position: absolute;
+  z-index: 1; 
+  bottom: 125%; 
   left: 50%;
-  margin-left: -60px; /* Centraliza o tooltip */
-  opacity: 0; /* Inicia com 0 de opacidade para animação */
-  transition: opacity 0.3s; /* Adiciona uma transição suave */
+  margin-left: -60px; 
+  opacity: 0; 
+  transition: opacity 0.3s; 
 }
 
 .boxes:hover .tooltip {
-  visibility: visible; /* Torna visível ao passar o mouse */
-  opacity: 1; /* Torna visível com opacidade total */
+  visibility: visible; 
+  opacity: 1; 
+
 }
