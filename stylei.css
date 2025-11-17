@@ -70,42 +70,29 @@
     color: rgb(0, 242, 255);
   }
   .tooltip {
-    visibility: hidden; /* Oculta o tooltip por padrão */
+    visibility: hidden;
     width: 120px;
     background-color: #333;
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    position: absolute; /* Posiciona o tooltip */
-    z-index: 1; /* Garante que fique acima de outros elementos */
-    bottom: 125%; /* Posição acima do container */
+    position: absolute; 
+    z-index: 1; 
+    bottom: 125%; 
     left: 50%;
-    margin-left: -60px; /* Centraliza o tooltip */
-    opacity: 0; /* Inicia com 0 de opacidade para animação */
-    transition: opacity 0.3s; /* Adiciona uma transição suave */
+    margin-left: -60px; 
+    opacity: 0; 
+    transition: opacity 0.3s; 
   }
   
   .boxes:hover .tooltip {
-    visibility: visible; /* Torna visível ao passar o mouse */
-    opacity: 1; /* Torna visível com opacidade total */
+    visibility: visible; 
+    opacity: 1; 
   }
-  
-  .container-video {
-    text-align: center;
-    padding: 10px;
-    background-color: #000000;
-    margin: auto;
-    width:fit-content;
-    border: 3px solid #1de5ff;
-  }
-  
-  .container-video video {
-    max-width: 90%; /* Para que o vídeo seja responsivo */
-    height: auto;
-  }
-  
+    
   .aproximar {
     transform: scale(1.05);
   }
+
   
