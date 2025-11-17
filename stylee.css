@@ -1,0 +1,150 @@
+.html, body {
+  text-align:left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 80px;
+  text-align: center;
+  background: #1A1D36;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.figure {
+  background-color:#5B7B9A;
+  padding: 5px;
+  text-align: center;
+  align-content: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.top a {
+  margin: 5px;
+  background-color:#1A1D36;
+  padding: 5px;
+  flex-direction: row;
+  border-radius: 3px;
+  float: left;
+}
+.boxes {
+  position: relative;
+  width: 20px;
+  display: inline-block;
+  padding: 12px;
+  background-color:#7493b3;
+  border-radius: 5%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+.tooltip {
+  visibility: hidden; /* Oculta o tooltip por padrão */
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute; /* Posiciona o tooltip */
+  z-index: 1; /* Garante que fique acima de outros elementos */
+  bottom: 125%; /* Posição acima do container */
+  left: 50%;
+  margin-left: -60px; /* Centraliza o tooltip */
+  opacity: 0; /* Inicia com 0 de opacidade para animação */
+  transition: opacity 0.3s; /* Adiciona uma transição suave */
+}
+
+.boxes:hover .tooltip {
+  visibility: visible; /* Torna visível ao passar o mouse */
+  opacity: 1; /* Torna visível com opacidade total */
+}
+.figure a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(0, 242, 255);
+}
+
+.caixa {
+  display: flex;
+  flex-wrap: wrap; /* Faz o conteúdo quebrar em telas menores */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: stretch;
+}
+
+.texto, .imagem {
+  background-color: #F3F5F8;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  flex: 1 1 45%;
+}
+
+.texto {
+  flex: 1 1 45%;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.imagem {
+  flex: 1 1 40%;
+  color:#F3F5F8;
+  object-fit: cover;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; 
+
+}
+.texto h2 {
+  text-align: center;
+}
+
+.text{
+  margin:70px;
+  padding:40px;
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 18px;
+  text-align: justify;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; 
+}
+
+.aproximar {
+  transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+  .preconceito {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto, .imagem {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+
+  }
+}
